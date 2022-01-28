@@ -69,3 +69,7 @@ tags:
   - All_Changes.user
   risk_score: 30
   security_domain: threat
+  cim_version: 5.0.0
+  tas_with_cim_mapping:
+  - splunk_ta_o365
+  - Splunk_TA_salesforce
