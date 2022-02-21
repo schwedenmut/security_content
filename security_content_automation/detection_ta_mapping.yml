@@ -1092,6 +1092,12 @@ linux_change_file_owner_to_root:
   - Splunk_TA_bit9-carbonblack
   - Splunk_TA_microsoft_sysmon
   - Splunk_TA_CrowdStrike_FDR
+linux_dd_file_overwrite:
+  cim_version: 5.0.0
+  tas_with_cim_mapping:
+  - Splunk_TA_bit9-carbonblack
+  - Splunk_TA_microsoft_sysmon
+  - Splunk_TA_CrowdStrike_FDR
 linux_doas_conf_file_creation:
   cim_version: 5.0.0
   tas_with_cim_mapping:
@@ -1219,6 +1225,12 @@ linux_sudoers_tmp_file_creation:
   tas_with_cim_mapping:
   - Splunk_TA_bit9-carbonblack
   - Splunk_TA_microsoft_sysmon
+linux_system_network_discovery:
+  cim_version: 5.0.0
+  tas_with_cim_mapping:
+  - Splunk_TA_bit9-carbonblack
+  - Splunk_TA_microsoft_sysmon
+  - Splunk_TA_CrowdStrike_FDR
 linux_visudo_utility_execution:
   cim_version: 5.0.0
   tas_with_cim_mapping:
@@ -1574,6 +1586,12 @@ rundll32_shimcache_flush:
   tas_with_cim_mapping:
   - Splunk_TA_microsoft_sysmon
 rundll32_with_no_command_line_arguments_with_network:
+  cim_version: 5.0.0
+  supported_tas:
+  - Splunk_TA_microsoft_sysmon
+  tas_with_cim_mapping:
+  - Splunk_TA_microsoft_sysmon
+rundll_loading_dll_by_ordinal:
   cim_version: 5.0.0
   supported_tas:
   - Splunk_TA_microsoft_sysmon
@@ -2075,6 +2093,24 @@ windows_nirsoft_advancedrun:
   tas_with_cim_mapping:
   - Splunk_TA_microsoft_sysmon
 windows_raccine_scheduled_task_deletion:
+  cim_version: 5.0.0
+  supported_tas:
+  - Splunk_TA_microsoft_sysmon
+  tas_with_cim_mapping:
+  - Splunk_TA_microsoft_sysmon
+windows_rasautou_dll_execution:
+  cim_version: 5.0.0
+  supported_tas:
+  - Splunk_TA_microsoft_sysmon
+  tas_with_cim_mapping:
+  - Splunk_TA_microsoft_sysmon
+windows_remote_assistance_spawning_process:
+  cim_version: 5.0.0
+  supported_tas:
+  - Splunk_TA_microsoft_sysmon
+  tas_with_cim_mapping:
+  - Splunk_TA_microsoft_sysmon
+windows_schtasks_create_run_as_system:
   cim_version: 5.0.0
   supported_tas:
   - Splunk_TA_microsoft_sysmon
